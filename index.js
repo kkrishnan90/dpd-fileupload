@@ -85,7 +85,7 @@ function Fileupload(name, options) {
 	try {
 		fs.statSync(this.config.fullDirectory).isDirectory();
 	} catch (er) {
-		fs.mkdir(this.config.fullDirectory, function(err){if(err)});
+		fs.mkdir(this.config.fullDirectory, function(err){if(err){}});
 	}
 }
 
